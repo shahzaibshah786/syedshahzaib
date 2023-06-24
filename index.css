@@ -1,0 +1,339 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+/* BANNER */
+
+.banner-wrapper{
+
+    width: 100%;
+    min-height: 650px;
+    height: auto;
+    background: url("bg-image.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 200px 0 100px 0;
+    z-index: 0;
+    
+    
+}
+
+
+body{
+
+    background-color: #091020 !important;
+}
+
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus,
+button{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.navbar-warapper .navbar{
+
+    padding: 15px 0;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all 2s linear;
+    background-color: #091020 !important;
+
+
+}
+
+.navbar-warapper .navbar-brand img{
+
+    max-width: 120px;
+    height: auto;
+}
+.navbar-wrapper .navbar-toggler{
+
+    color: white;
+    border: 0;
+    line-height: 2;
+}
+
+header a {
+
+    margin: 0 10px !important;
+    
+}
+
+.nav-link{
+
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    color: grey !important;
+    display: inline-block;
+}
+
+header .nav-item .nav-link::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color:rgb(218, 2, 153) !important;
+    transition: 0.3s;
+    bottom: 0;
+}
+
+header .nav-item .nav-link.active::after,
+header .nav-item .nav-link:hover::after{
+
+    width: 100%;
+}
+
+header .nav-item .nav-link.active,
+header .nav-item .nav-link:hover{
+
+    color: white !important;
+}
+
+
+.slidercontent{
+    color: white;
+}
+
+
+header .menu-navbar{
+
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+
+.about-wrapper ul.nav-pills{
+
+    border: 1px solid gray;
+    border-radius: 50px;
+}
+
+.about-wrapper ul li a.nav-link{
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 500px;
+    transition: all 0.45s cubic-bezier(0,0,0.2,1);
+    display: inline-block;
+    color: gray;
+    border: 0;
+}
+
+
+.about-wrapper ul li .nav-link.active{
+
+    background-color:rgb(218, 2, 153) !important ;
+}
+
+.nav-link{
+    color: white !important;
+}
+
+.about-wrapper .single-process{
+    margin-top: 26px;
+    position: relative;
+    overflow: hidden;
+}
+.about-wrapper .single-process .progress{
+
+    height: 4px;
+    border-radius: 4px;
+    box-shadow: none;
+    background-color: white;
+    overflow: visible;
+}
+.about-wrapper .single-process h6{
+    text-align: left;
+}
+
+.about-wrapper .single-process .label{
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: gray !important;
+    font-size: 15px;
+}
+
+.about-wrapper .single-process .progress-bar{
+
+    background-color: rebeccapurple !important;
+}
+
+
+.about-wrapper .tab-pane li {
+
+    color: grey;
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    list-style: none;
+}
+
+.about-wrapper .tab-pane li a {
+
+    
+    font-weight: 500;
+    display: block;
+    color: grey;
+}
+
+#pills-home-tab {
+
+    display: inline-block;
+    border-radius: 40px;
+    width: 130%;
+}
+
+#pills-profile-tab{
+
+    display: block;
+    border-radius: 40px;
+    width: 130%;
+}
+#pills-contact-tab{
+
+    display: block;
+    border-radius: 40px;
+    width: 100%;
+}
+
+
+.services-wrapper .card{
+
+    background-color: #091020 !important;
+    cursor: pointer;
+    transition:transform 0.65s cubic-bezier(0.05, 0.2, 0.1, 1);
+    box-shadow: 0.65s cubic-bezier(0.05, 0.2, 0.1, 1) ;
+}
+
+.services-wrapper .card:hover{
+
+    box-shadow: 0px 2px 70px 0px rgb(253 71 102 /5%);
+    transform: translate(-5px);
+}
+
+
+.portfolio-wrapper .card span{
+
+    transition: background-position 4s ease-in-out 0s;
+    width: 100%;
+    height: 100%;
+    background-position: top center;
+    background-size: cover;
+}
+
+
+.portfolio-wrapper .card{
+
+    height: 100%;
+    height: 350px;
+    overflow: hidden;
+    border: 1px solid grey;
+    cursor: pointer;
+    box-shadow: 0 0 16px black;
+}
+
+ .portfolio-wrapper .card:hover span{
+
+    background-position: bottom center;
+}
+
+.portfolio-wrapper .card{
+
+    min-height: 400px;
+} 
+
+
+
+.contact-wrapper .form-control,
+.contact-wrapper textarea{
+    background-color: transparent;
+    border-color: grey;
+    color: grey;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+
+
+.contact-wrapper .form-control:hover,
+.contact-wrapper textarea:hover,
+.contact-wrapper .form-control:focus,
+.contact-wrapper textarea:focus{
+
+ border-color: blueviolet;
+    color: white;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background:#091020;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: blueviolet;
+  }
+  
+  
+  .footer-wrapper{
+
+    background-color: #152243;
+    padding: 20px;
+  }
+
+  .footer-wrapper .footer-logo img{
+    width: 100px;
+  }
+
+  .footer-wrapper .socialicon li {
+
+    margin: 6px;
+  }
+
+  .footer-wrapper .socialicon a{
+
+    height: 35px;
+    width: 35px;
+    line-height: 30px;
+    font-size: 14px;
+    display: inline-block;
+    border: 2px solid grey;
+    color: grey;
+    text-align: center;
+    border-radius: 100% ;
+    -webkit-transition: 0.3s all cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: 0.3s  cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+
+
+  .footer-wrapper .socialicon a:hover{
+
+ background-color: blueviolet;
+ border-color: blueviolet;
+ color: white;
+ box-shadow: 0px 10px 15px 0 rgb(0 0 0 / 100);
+ transform: translate(-3px);
+  }
